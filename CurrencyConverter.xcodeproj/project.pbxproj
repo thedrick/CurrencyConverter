@@ -20,10 +20,14 @@
 		253A0FDB16FC00BE00AD69A8 /* CCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253A0FD916FC00BE00AD69A8 /* CCViewController.xib */; };
 		2571D0E91702836200272E40 /* grey_wash_wall@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2571D0E71702836200272E40 /* grey_wash_wall@2X.png */; };
 		2571D0EA1702836200272E40 /* grey_wash_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2571D0E81702836200272E40 /* grey_wash_wall.png */; };
+		257206921702953D000E83CA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 257206901702953D000E83CA /* logo.png */; };
+		257206931702953D000E83CA /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 257206911702953D000E83CA /* logo@2x.png */; };
+		257206951702954E000E83CA /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 257206941702954E000E83CA /* logo@2x.png */; };
+		2572069717029552000E83CA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2572069617029552000E83CA /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		253A0FB716FC009400AD69A8 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		253A0FB716FC009400AD69A8 /* Currencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253A0FBA16FC009400AD69A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		253A0FBC16FC009400AD69A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		253A0FBE16FC009400AD69A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -41,6 +45,10 @@
 		253A0FD916FC00BE00AD69A8 /* CCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCViewController.xib; sourceTree = "<group>"; };
 		2571D0E71702836200272E40 /* grey_wash_wall@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey_wash_wall@2X.png"; sourceTree = "<group>"; };
 		2571D0E81702836200272E40 /* grey_wash_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_wash_wall.png; sourceTree = "<group>"; };
+		257206901702953D000E83CA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		257206911702953D000E83CA /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		257206941702954E000E83CA /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		2572069617029552000E83CA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 		253A0FAE16FC009400AD69A8 = {
 			isa = PBXGroup;
 			children = (
+				2572069617029552000E83CA /* logo.png */,
+				257206941702954E000E83CA /* logo@2x.png */,
 				253A0FC016FC009400AD69A8 /* CurrencyConverter */,
 				253A0FB916FC009400AD69A8 /* Frameworks */,
 				253A0FB816FC009400AD69A8 /* Products */,
@@ -69,7 +79,7 @@
 		253A0FB816FC009400AD69A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				253A0FB716FC009400AD69A8 /* CurrencyConverter.app */,
+				253A0FB716FC009400AD69A8 /* Currencies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +116,8 @@
 				253A0FC816FC009400AD69A8 /* CurrencyConverter-Prefix.pch */,
 				2571D0E71702836200272E40 /* grey_wash_wall@2X.png */,
 				2571D0E81702836200272E40 /* grey_wash_wall.png */,
+				257206901702953D000E83CA /* logo.png */,
+				257206911702953D000E83CA /* logo@2x.png */,
 				253A0FCC16FC009400AD69A8 /* Default.png */,
 				253A0FCE16FC009400AD69A8 /* Default@2x.png */,
 				253A0FD016FC009400AD69A8 /* Default-568h@2x.png */,
@@ -130,7 +142,7 @@
 			);
 			name = CurrencyConverter;
 			productName = CurrencyConverter;
-			productReference = 253A0FB716FC009400AD69A8 /* CurrencyConverter.app */;
+			productReference = 253A0FB716FC009400AD69A8 /* Currencies.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,6 +184,10 @@
 				253A0FDB16FC00BE00AD69A8 /* CCViewController.xib in Resources */,
 				2571D0E91702836200272E40 /* grey_wash_wall@2X.png in Resources */,
 				2571D0EA1702836200272E40 /* grey_wash_wall.png in Resources */,
+				257206921702953D000E83CA /* logo.png in Resources */,
+				257206931702953D000E83CA /* logo@2x.png in Resources */,
+				257206951702954E000E83CA /* logo@2x.png in Resources */,
+				2572069717029552000E83CA /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Currencies;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -275,7 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Currencies;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
