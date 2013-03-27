@@ -22,12 +22,14 @@
 
 - (void)updateCurrenciesAndExchangeRates
 {
+    // Grab current currency conversion data from yahoo finance
     NSString *yahooCurrencies = @"http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json";
     NSData *currencyData = [NSData dataWithContentsOfURL:[NSURL URLWithString:yahooCurrencies]];
     NSError *JSONError;
     NSDictionary *currencyDict = [NSJSONSerialization JSONObjectWithData:currencyData
                                                                  options:0
                                                                    error:&JSONError];
+    // something went wrong getting the data from the web
     if (JSONError) {
         NSLog(@"Error parsing data %@", JSONError);
     } else {
@@ -49,11 +51,22 @@
 
 - (void)currencyConversionShouldChangeForRowInPickerView:(NSInteger)row
 {
-    if (currencies == nil || [[amount text] isEqualToString:@""]) {
-        convertedLabel.text = @"Please input an amount.";
+    // If we don't have any currencies (probably an error in the JSON parsing)
+    // display an error to the user
+    if (currencies == nil) {
+        convertedLabel.text = @"Error. :(";
         return;
     }
-    float amt = [[amount text] floatValue];
+    // grab the amount from the text field, convert it to a float, multiply
+    // by the conversion rate at the specified row int he pickerView, and display
+    // that result.
+    float amt;
+    if ([[amount text] isEqualToString:@""]) {
+        // default to 0.00 if the user has not entered a number
+        amt = 0;
+    } else {
+        amt = [[amount text] floatValue];
+    }
     NSNumber *conversionRate = [conversionDict objectForKey:[currencies objectAtIndex:row]];
     float conversion = amt * [conversionRate floatValue];
     NSString *amountString = [NSString stringWithFormat:@"%.2f", conversion];
@@ -106,6 +119,8 @@
     [amount addTarget:self
                action:@selector(textFieldDidChange:)
      forControlEvents:UIControlEventEditingChanged];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"grey_wash_wall.png"]]];
+    [self currencyConversionShouldChangeForRowInPickerView:0];
 }
 
 - (void)didReceiveMemoryWarning

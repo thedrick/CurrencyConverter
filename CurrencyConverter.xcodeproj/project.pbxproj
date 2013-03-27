@@ -18,6 +18,8 @@
 		253A0FD116FC009400AD69A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253A0FD016FC009400AD69A8 /* Default-568h@2x.png */; };
 		253A0FDA16FC00BE00AD69A8 /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253A0FD816FC00BE00AD69A8 /* CCViewController.m */; };
 		253A0FDB16FC00BE00AD69A8 /* CCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253A0FD916FC00BE00AD69A8 /* CCViewController.xib */; };
+		2571D0E91702836200272E40 /* grey_wash_wall@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 2571D0E71702836200272E40 /* grey_wash_wall@2X.png */; };
+		2571D0EA1702836200272E40 /* grey_wash_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2571D0E81702836200272E40 /* grey_wash_wall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		253A0FD716FC00BE00AD69A8 /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
 		253A0FD816FC00BE00AD69A8 /* CCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
 		253A0FD916FC00BE00AD69A8 /* CCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCViewController.xib; sourceTree = "<group>"; };
+		2571D0E71702836200272E40 /* grey_wash_wall@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey_wash_wall@2X.png"; sourceTree = "<group>"; };
+		2571D0E81702836200272E40 /* grey_wash_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_wash_wall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				253A0FC316FC009400AD69A8 /* InfoPlist.strings */,
 				253A0FC616FC009400AD69A8 /* main.m */,
 				253A0FC816FC009400AD69A8 /* CurrencyConverter-Prefix.pch */,
+				2571D0E71702836200272E40 /* grey_wash_wall@2X.png */,
+				2571D0E81702836200272E40 /* grey_wash_wall.png */,
 				253A0FCC16FC009400AD69A8 /* Default.png */,
 				253A0FCE16FC009400AD69A8 /* Default@2x.png */,
 				253A0FD016FC009400AD69A8 /* Default-568h@2x.png */,
@@ -164,6 +170,8 @@
 				253A0FCF16FC009400AD69A8 /* Default@2x.png in Resources */,
 				253A0FD116FC009400AD69A8 /* Default-568h@2x.png in Resources */,
 				253A0FDB16FC00BE00AD69A8 /* CCViewController.xib in Resources */,
+				2571D0E91702836200272E40 /* grey_wash_wall@2X.png in Resources */,
+				2571D0EA1702836200272E40 /* grey_wash_wall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +299,7 @@
 				253A0FD616FC009400AD69A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
