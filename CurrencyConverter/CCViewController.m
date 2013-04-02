@@ -20,11 +20,33 @@
     return self;
 }
 
+// give back the path to store the backup currency data.
+- (NSString *)pathForSavedCurrencyData
+{
+    NSArray *documentDirectories =
+    NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                        NSUserDomainMask,
+                                        YES);
+    NSString *documentDirectory = [documentDirectories objectAtIndex:0];
+    return [documentDirectory stringByAppendingPathComponent:@"currencies"];
+}
+
 - (void)updateCurrenciesAndExchangeRates
 {
     // Grab current currency conversion data from yahoo finance
     NSString *yahooCurrencies = @"http://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json";
     NSData *currencyData = [NSData dataWithContentsOfURL:[NSURL URLWithString:yahooCurrencies]];
+    if (currencyData == nil) {
+        // read in an old version of the currency data from file.
+        currencyData = [NSData dataWithContentsOfFile:[self pathForSavedCurrencyData]];
+        if (currencyData == nil) {
+            // This will be used if there is not already a backup file
+            // from a previous run of the program.
+            NSString *defaultCurrenciesPath = [[NSBundle mainBundle] pathForResource:@"defaultcurrencies"
+                                                                              ofType:@".txt"];
+            currencyData = [NSData dataWithContentsOfFile:defaultCurrenciesPath];
+        }
+    }
     NSError *JSONError;
     NSDictionary *currencyDict = [NSJSONSerialization JSONObjectWithData:currencyData
                                                                  options:0
@@ -46,6 +68,9 @@
         }
         formatter = nil;
         currencies = [[conversionDict allKeys] sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+        
+        // save the currency data to file for a backup.
+        [currencyData writeToFile:[self pathForSavedCurrencyData] atomically:NO];
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2532002F170A1CA300008E21 /* defaultcurrencies.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2532002E170A1CA300008E21 /* defaultcurrencies.txt */; };
 		253A0FBB16FC009400AD69A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253A0FBA16FC009400AD69A8 /* UIKit.framework */; };
 		253A0FBD16FC009400AD69A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253A0FBC16FC009400AD69A8 /* Foundation.framework */; };
 		253A0FBF16FC009400AD69A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253A0FBE16FC009400AD69A8 /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2532002E170A1CA300008E21 /* defaultcurrencies.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = defaultcurrencies.txt; sourceTree = "<group>"; };
 		253A0FB716FC009400AD69A8 /* Currencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253A0FBA16FC009400AD69A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		253A0FBC16FC009400AD69A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +112,7 @@
 		253A0FC116FC009400AD69A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2532002E170A1CA300008E21 /* defaultcurrencies.txt */,
 				253A0FC216FC009400AD69A8 /* CurrencyConverter-Info.plist */,
 				253A0FC316FC009400AD69A8 /* InfoPlist.strings */,
 				253A0FC616FC009400AD69A8 /* main.m */,
@@ -188,6 +191,7 @@
 				257206931702953D000E83CA /* logo@2x.png in Resources */,
 				257206951702954E000E83CA /* logo@2x.png in Resources */,
 				2572069717029552000E83CA /* logo.png in Resources */,
+				2532002F170A1CA300008E21 /* defaultcurrencies.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
